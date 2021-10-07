@@ -13,7 +13,7 @@ The script uses pyautogui, openCV, requests, PIL, io, datetime and time. You wil
 
 # Very Detailed Description
 The script is written in Python. It uses pyautogui module to find the screenshot on the screen and control the mouse to click its center. OpenCV is needed by pyautogui to be able to use the "confidence" 
-parameter. Confidence parameter, which takes values from 0 to 1, makes sure that the script will identify the screenshot even if the button on screen is different from the screenshot. Some of these differences include:
+parameter. Confidence parameter, which takes values between 0 and 1, makes sure that the script will identify the screenshot even if the button on screen is different from the screenshot. Some of these differences include:
 - If the mouse is on the center of the button
 - If the user uses a wider screenshot where some features, like the loading bar or ranked banner, can change over time or from user to user.
 
