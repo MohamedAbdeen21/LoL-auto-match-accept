@@ -12,9 +12,11 @@ import requests
 from PIL import Image
 from io import BytesIO
 
+# Path OR URL of the screenshot
 PICTURE = r''
 URL = 'https://i.imgur.com/093Oe8v.png'
 
+# If a URL is given, get the screenshot
 if PICTURE == r'':
     response = requests.get(URL)
     PICTURE = BytesIO(response)
@@ -24,6 +26,8 @@ img = Image.open(PICTURE)
 pos = None
 print("LOCATING ...")
 
+# Start looking for the button and click on its center when found, then start looking again
+# in case someone dodges the champion select.
 while True:
     time.sleep(3)
     pos = pg.locateCenterOnScreen(img,confidence = 0.7)
