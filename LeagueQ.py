@@ -19,7 +19,7 @@ URL = 'https://i.imgur.com/093Oe8v.png'
 # If a URL is given, get the screenshot
 if PICTURE == r'':
     response = requests.get(URL)
-    PICTURE = BytesIO(response)
+    PICTURE = BytesIO(response.content)
 
 img = Image.open(PICTURE)
 
