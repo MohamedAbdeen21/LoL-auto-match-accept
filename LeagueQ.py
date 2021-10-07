@@ -16,8 +16,8 @@ from io import BytesIO
 PICTURE = r''
 URL = 'https://i.imgur.com/093Oe8v.png'
 
-# If a URL is given, get the screenshot
-if PICTURE == r'':
+# If a path is not given, get the screenshot
+if PICTURE == '':
     response = requests.get(URL)
     PICTURE = BytesIO(response.content)
 
