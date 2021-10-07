@@ -15,7 +15,7 @@ The script uses pyautogui, openCV, requests, PIL, io, datetime and time. You wil
 The script is written in Python. It uses pyautogui module to find the screenshot on the screen and control the mouse to click its center. OpenCV is needed by pyautogui to be able to use the "confidence" 
 parameter. Confidence parameter, which takes values from 0 to 1, makes sure that the script will identify the screenshot even if the button on screen is different from the screenshot. Some of these differences include:
 - If the mouse is on the center of the button
-- If the user uses a wider screenshot where some features, like the loading bar or ranked banner, can change over time or from user to user
+- If the user uses a wider screenshot where some features, like the loading bar or ranked banner, can change over time or from user to user.
 Setting the confidence to a much higher value can cause the script to not be able to locate the button in some cases, like those mentioned above. However, setting the confidence to a much lower value
 can cause bugs, for example, it can cause the script to keep clicking on the accept button even after it turns grey after the first click. 
 The locating is placed inside an infinite loop. In case someone dodges the champ select and you are returned to the queue, the script will accept the other matches too. When a queue is accepted a message
