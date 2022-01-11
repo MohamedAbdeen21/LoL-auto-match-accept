@@ -9,9 +9,9 @@ The script uses an uploaded screenshot of the accept button in English. If you u
 inside the script OR you can save it locally on your PC and provide the full path to the screenshot. The script will protrize paths over URLs.
 
 # Modules needed
-The script uses pyautogui, openCV, requests, PIL, io, datetime and time. You will need to install the first 3, you probably won't need to install the others as they are installed with Python by default.
+The script uses pyautogui, openCV, requests, PIL, io, datetime and time. You will need to install the first 3, you probably won't need to install the others as they are installed alongside Python by default.
 
-# Very Detailed Description
+# Detailed Description
 The script is written in Python. It uses pyautogui module to find the screenshot on the screen and control the mouse to click its center. OpenCV is needed by pyautogui to be able to use the "confidence" 
 parameter. Confidence parameter, which takes values between 0 and 1, makes sure that the script will identify the screenshot even if the button on screen is different from the screenshot. Some of these differences include:
 - If the mouse is on the center of the button
